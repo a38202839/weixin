@@ -1,0 +1,63 @@
+<?php
+//定义模板数组
+$tmp_arr = array(
+    'text'=><<<EOT
+<xml>
+<ToUserName><![CDATA[%s]]></ToUserName>
+<FromUserName><![CDATA[%s]]></FromUserName>
+<CreateTime>%s</CreateTime>
+<MsgType><![CDATA[%s]]></MsgType>
+<Content><![CDATA[%s]]></Content>
+<FuncFlag>0</FuncFlag>
+</xml>
+EOT
+,
+    'image'=><<<ETO
+<xml>
+<ToUserName><![CDATA[%s]]></ToUserName>
+<FromUserName><![CDATA[%s]]></FromUserName>
+<CreateTime>%s</CreateTime>
+<MsgType><![CDATA[%s]]></MsgType>
+<Image>
+<MediaId><![CDATA[%s]]></MediaId>
+</Image>
+</xml>
+ETO
+,
+    'music'=><<<ETO
+<xml>
+<ToUserName><![CDATA[%s]]></ToUserName>
+<FromUserName><![CDATA[%s]]></FromUserName>
+<CreateTime>%s</CreateTime>
+<MsgType><![CDATA[%s]]></MsgType>
+<Music>
+<Title><![CDATA[%s]]></Title>
+<Description><![CDATA[%s]]></Description>
+<MusicUrl><![CDATA[%s]]></MusicUrl>
+<HQMusicUrl><![CDATA[%s]]></HQMusicUrl>
+</Music>
+</xml>
+ETO
+,
+    'news'=><<<ETO
+<xml>
+<ToUserName><![CDATA[%s]]></ToUserName>
+<FromUserName><![CDATA[%s]]></FromUserName>
+<CreateTime>%s</CreateTime>
+<MsgType><![CDATA[%s]]></MsgType>
+<ArticleCount>%s</ArticleCount>
+<Articles>%s</Articles>
+</xml>
+ETO
+,
+    'music1'=><<<ETO
+<xml>
+<ToUserName><![CDATA[toUser]]></ToUserName>
+<FromUserName><![CDATA[FromUser]]></FromUserName>
+<CreateTime>123456789</CreateTime>
+<MsgType><![CDATA[event]]></MsgType>
+<Event><![CDATA[CLICK]]></Event>
+<EventKey><![CDATA[EVENTKEY]]></EventKey>
+</xml>
+ETO
+);
